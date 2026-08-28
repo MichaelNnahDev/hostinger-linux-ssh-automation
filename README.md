@@ -99,3 +99,22 @@ chmod 700 ~/.ssh
 chmod 600 ~/.ssh/id_hostinger*
 chmod 644 ~/.ssh/id_hostinger*.pub
 chmod 600 ~/.ssh/config
+
+---
+
+## 6. Fast File Sync with Rsync
+
+Because your `~/.ssh/config` is configured, `rsync` can leverage your existing host aliases without needing manual flags for ports, keys, or usernames.
+
+### Download files from Hostinger to Local Machine
+
+### Upload local files/directory to Hostinger
+
+rsync -avzP --exclude='.git*' ./dist/ hostinger1:~/domains/michaelnnah.com/public_html/
+
+**Flag Breakdown:**
+- `-a` (Archive): Preserves file permissions, timestamps, symlinks, and directory structures.
+- `-v` (Verbose): Shows real-time transfer progress.
+- `-z` (Compress): Compresses file data during transfer to speed up execution over the network.
+- `-P` (Progress & Partial): Displays a progress bar and allows resuming interrupted transfers.
+- `--exclude`: Prevents syncing local Git repos, build files, or node modules.
