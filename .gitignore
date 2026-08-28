@@ -1,0 +1,14 @@
+# Private & Public SSH Keys
+id_*
+*.pub
+*.pem
+*.key
+*.cer
+
+# Local Configuration Overrides
+config
+*.local
+
+# OS Artifacts
+.DS_Store
+Thumbs.db

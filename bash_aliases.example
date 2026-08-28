@@ -1,0 +1,13 @@
+# ==========================================
+# Bash / Zsh SSH Aliases (~/.bashrc or ~/.zshrc)
+# ==========================================
+
+# Direct Server Access
+alias ssh-hostinger1="ssh hostinger1"
+alias ssh-hostinger2="ssh hostinger2"
+
+# Direct-to-Directory Project Navigation (Hostinger 1)
+alias ssh-michaelnnah='ssh -t hostinger1 "cd ~/domains/michaelnnah.com/public_html && exec \$SHELL -l"'
+
+# Direct-to-Directory Project Navigation (Hostinger 2)
+alias ssh-zanywholesaleshub='ssh -t hostinger2 "cd ~/domains/zanywholesaleshub.com/public_html && exec \$SHELL -l"'

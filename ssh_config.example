@@ -1,0 +1,20 @@
+# ==========================================
+# Hostinger SSH Config Template (~/.ssh/config)
+# ==========================================
+
+# Hostinger Server 1
+Host hostinger1
+    Hostname 192.0.2.10
+    Port 65002
+    User u123456789
+    ServerAliveInterval 60
+    IdentityFile ~/.ssh/id_hostinger1
+
+# Hostinger Server 2 (with forced pseudo-terminal allocation)
+Host hostinger2
+    Hostname 198.51.100.20
+    Port 65002
+    User u987654321
+    ServerAliveInterval 60
+    IdentityFile ~/.ssh/id_hostinger2
+    RequestTTY force
