@@ -118,3 +118,7 @@ rsync -avzP --exclude='.git*' ./dist/ hostinger1:~/domains/michaelnnah.com/publi
 - `-z` (Compress): Compresses file data during transfer to speed up execution over the network.
 - `-P` (Progress & Partial): Displays a progress bar and allows resuming interrupted transfers.
 - `--exclude`: Prevents syncing local Git repos, build files, or node modules.
+
+## 4. Configure `~/.ssh/config`
+
+![SSH Config Preview](assets/ssh-config-screenshot.png)
