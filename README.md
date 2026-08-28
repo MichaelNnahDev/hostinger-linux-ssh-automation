@@ -61,6 +61,8 @@ Host hostinger2
     IdentityFile ~/.ssh/id_hostinger2
     RequestTTY force
 
+![SSH Config Preview](assets/ssh-config-screenshot.png)
+
 Lock down permissions:
 
 chmod 600 ~/.ssh/config
@@ -119,6 +121,4 @@ rsync -avzP --exclude='.git*' ./dist/ hostinger1:~/domains/michaelnnah.com/publi
 - `-P` (Progress & Partial): Displays a progress bar and allows resuming interrupted transfers.
 - `--exclude`: Prevents syncing local Git repos, build files, or node modules.
 
-## 4. Configure `~/.ssh/config`
 
-![SSH Config Preview](assets/ssh-config-screenshot.png)
